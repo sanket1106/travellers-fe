@@ -1,0 +1,31 @@
+<div class="card bg-light mb-3">
+    <div class="card-header">{{deal.title}} - {{deal.city}} - {{deal.country}}</div>
+    <div class="card-body">
+        <div class="col-md-1" style="float: left;">
+            <img src="https://i.pinimg.com/originals/21/d1/1c/21d11c67dff135bb12a9bc46ab2b96c2.jpg" 
+                class="card-img-left" alt="..."
+                style="max-width: 90px;">
+        </div>
+        <div class="col-md-10" style="float: left;">
+            <p>
+                {{deal.description}}
+            </p>
+            <p>
+                {{deal.description}}
+            </p>
+            <p>
+                <a href="#" class="btn btn-secondary btn-lg active btn-sm" role="button" aria-pressed="true">Message</a>
+                <a href="#" class="btn btn-secondary btn-lg active btn-sm" role="button" aria-pressed="true">Negotiate</a>              
+                <a href="#" class="btn btn-primary btn-lg active btn-sm" role="button" aria-pressed="true">Book Now</a>
+            </p>
+        </div>
+        <div class="col-md-1" style="float: right;">
+            <div class="row">
+                {{deal.cost}}
+            </div>
+            <div class="row">
+                per person
+            </div>
+        </div>
+    </div>
+</div>

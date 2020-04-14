@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Deal } from '../../deal.model';
 
 @Component({
@@ -7,11 +7,7 @@ import { Deal } from '../../deal.model';
 })
 export class DealItem {
 
-    deals: Deal[] = [
-        new Deal('Wonderful Bahamas', 'Bahama', '', 'Bahama Islands', 1400, 'CAD'),
-        new Deal('Wonderful Bahamas', 'Bahama', '', 'Bahama Islands', 1600, 'CAD')
-    ];
-
+    @Input('deal') deal: Deal;
     constructor(){
 
     }

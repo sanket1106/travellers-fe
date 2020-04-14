@@ -1,1 +1,14 @@
-<p>deals-list works!</p>
+<div class="container-fluid">
+    <div class="cols-xs-12">
+        <h5>Showing {{deals.length}} deals</h5>
+        <app-deal-item
+            *ngFor = "let deal of deals"
+            [deal] = "deal"
+        ></app-deal-item>
+        <!--
+        <app-deal-item></app-deal-item>
+        <app-deal-item></app-deal-item>
+        <app-deal-item></app-deal-item>
+        -->
+    </div>
+</div>
