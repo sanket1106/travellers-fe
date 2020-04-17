@@ -1,0 +1,14 @@
+.container-login {
+    max-width: 30%;
+    align-content: center;
+    margin-left: 35%;
+    margin-top: 10%
+}
+
+.form-control {
+    max-width: 75%;
+}
+
+.btn-primary {
+    background-color: #577958;
+}
