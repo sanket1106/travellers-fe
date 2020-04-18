@@ -3,8 +3,8 @@
     <div class="navbar-collapse">
         <div class="navbar-nav">
             <div class="row">
-                <app-header-link-button [buttonText]="'DASHBOARD'"></app-header-link-button>
-                <app-header-link-button [buttonText]="'CREATE QUOTE'"></app-header-link-button>
+                <app-header-link-button *ngIf='isUserLoggedIn' [buttonText]="'DASHBOARD'" [route]="'/home'"></app-header-link-button>
+                <app-header-link-button *ngIf='isUserLoggedIn' [buttonText]="'CREATE QUOTE'" [route]="'/quote'"></app-header-link-button>
             </div>
         </div>
     </div>

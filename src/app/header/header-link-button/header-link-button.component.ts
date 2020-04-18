@@ -8,10 +8,11 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HeaderLinkButtonComponent implements OnInit {
 
   @Input('buttonText') buttonText: string;
-
+  @Input('route') route: string;
   constructor() { }
 
   ngOnInit(): void {
+    console.log('Route: '+this.route);
   }
 
 }

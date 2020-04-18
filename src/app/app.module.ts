@@ -14,6 +14,7 @@ import { CookieService } from 'ngx-cookie-service';
 import { LogoutComponent } from './auth/logout/logout.component';
 import { UserService } from './auth/user.service';
 import { HeaderLinkButtonComponent } from './header/header-link-button/header-link-button.component';
+import { ErrorComponent } from './error/error.component';
 
 // const appRoutes: Routes = [
 //   { path: '', component: LoginComponent },
@@ -24,6 +25,7 @@ import { HeaderLinkButtonComponent } from './header/header-link-button/header-li
 @NgModule({
   declarations: [
     AppComponent,
+    ErrorComponent,
     HeaderComponent,
     DealsListComponent,
     DealsComponent,
