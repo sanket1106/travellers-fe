@@ -1,0 +1,35 @@
+.home-container {
+    margin-top: 5%;
+}
+
+.home-card {
+    max-width: 18%
+}
+
+.home-card-deck {
+    justify-content: center;
+}
+
+.home-card-title {
+    text-align: center;
+    color: #577958;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.home-card-text {
+    text-align: center;
+    margin: 0%;
+}
+
+.home-btn {
+    background-color: #577958;
+    color: #ffffff;
+}
+
+.row {
+    justify-content: center;
+}
+h5 {
+    margin-bottom: 0px; 
+}

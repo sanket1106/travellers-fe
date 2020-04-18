@@ -11,10 +11,13 @@ import { DealsDetailsComponent } from './deals/deals-details/deals-details.compo
 import { LoginComponent } from './auth/login/login.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { CookieService } from 'ngx-cookie-service';
+import { LogoutComponent } from './auth/logout/logout.component';
+import { UserService } from './auth/user.service';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
-  { path: 'login', component: AppComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent }
 ];
 
@@ -27,7 +30,8 @@ const appRoutes: Routes = [
     DealsDetailsComponent,
     DealItem,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,7 @@ const appRoutes: Routes = [
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [CookieService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

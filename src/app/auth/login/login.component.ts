@@ -16,7 +16,11 @@ export class LoginComponent implements OnInit {
     private isValidUser: boolean = false;
     constructor(private userService: UserService, private router: Router) {}
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        if(this.userService.isUserLoggedIn()){
+            this.router.navigate(['home']);
+        }
+    }
 
     onLogin(email, password){
         this.user = new User(email.value, password.value);
@@ -24,4 +28,5 @@ export class LoginComponent implements OnInit {
         console.log('User: ' + this.user + ' => ' +this.isValidUser);
         this.router.navigate(['home']);
     }
+
 }

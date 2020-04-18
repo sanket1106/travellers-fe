@@ -1,3 +1,18 @@
 <nav class="navbar sticky-top navbar-light header-login">
     <a class="navbar-brand header-login-text" href="#">Travellers</a>
+    <div class="navbar-collapse">
+        <div class="navbar-nav">
+            <div class="row">
+                <div class="col-md-2 header-link-col">
+                    <a class="nav-item nav-link header-link-text active" href="#">DASHBOARD 
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </div>
+                <div class="class-md-2 header-link-col">
+                    <a class="nav-item nav-link header-link-text" href="#">CREATE QUOTE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-logout *ngIf='isUserLoggedIn'></app-logout>
 </nav>
