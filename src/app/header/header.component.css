@@ -10,15 +10,6 @@
     flex-basis: 1%;
 }
 
-.header-link-col {
-    max-width: 10%;
-}
-
-.header-link-text {
-    color: #ffffff !important;
-    font-size: small !important;
-}
-
 /* .header-link-text {
     color: #fff !important;
     text-shadow:

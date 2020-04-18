@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
         this.user = new User(email.value, password.value);
         this.isValidUser = this.userService.validateUser(this.user);
         console.log('User: ' + this.user + ' => ' +this.isValidUser);
+        this.userService.userLoggedInEmitter.emit(true);
         this.router.navigate(['home']);
     }
 

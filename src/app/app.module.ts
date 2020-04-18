@@ -9,17 +9,17 @@ import { DealsComponent } from './deals/deals.component';
 import { DealItem } from './deals/deals-list/deal-item/deal-item.component';
 import { DealsDetailsComponent } from './deals/deals-details/deals-details.component';
 import { LoginComponent } from './auth/login/login.component';
-import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { CookieService } from 'ngx-cookie-service';
 import { LogoutComponent } from './auth/logout/logout.component';
 import { UserService } from './auth/user.service';
+import { HeaderLinkButtonComponent } from './header/header-link-button/header-link-button.component';
 
-const appRoutes: Routes = [
-  { path: '', component: LoginComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent }
-];
+// const appRoutes: Routes = [
+//   { path: '', component: LoginComponent },
+//   { path: 'login', component: LoginComponent },
+//   { path: 'home', component: HomeComponent }
+// ];
 
 @NgModule({
   declarations: [
@@ -31,13 +31,14 @@ const appRoutes: Routes = [
     DealItem,
     LoginComponent,
     HomeComponent,
-    LogoutComponent
+    LogoutComponent,
+    HeaderLinkButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
+    // FormsModule,
+    // RouterModule.forRoot(appRoutes)
   ],
   providers: [CookieService, UserService],
   bootstrap: [AppComponent]

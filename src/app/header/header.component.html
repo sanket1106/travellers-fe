@@ -3,14 +3,8 @@
     <div class="navbar-collapse">
         <div class="navbar-nav">
             <div class="row">
-                <div class="col-md-2 header-link-col">
-                    <a class="nav-item nav-link header-link-text active" href="#">DASHBOARD 
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </div>
-                <div class="class-md-2 header-link-col">
-                    <a class="nav-item nav-link header-link-text" href="#">CREATE QUOTE</a>
-                </div>
+                <app-header-link-button [buttonText]="'DASHBOARD'"></app-header-link-button>
+                <app-header-link-button [buttonText]="'CREATE QUOTE'"></app-header-link-button>
             </div>
         </div>
     </div>
