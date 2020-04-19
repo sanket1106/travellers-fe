@@ -16,7 +16,7 @@ export class LogoutComponent implements OnInit {
 
   onLogout(): void {
     this.userService.deleteUserCookies();
-    this.userService.userLoggedInEmitter.emit(false);
+    this.userService.userLoggedInEmitter.next(false);
     this.router.navigate(['login']);
   }
 }

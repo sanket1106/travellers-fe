@@ -2,6 +2,7 @@ import { User } from '../shared/models/user.model';
 import { LoginService } from '../shared/services/login.service';
 import { Injectable, EventEmitter } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
+import { Subject } from 'rxjs';
 
 @Injectable()
 export class UserService {
@@ -12,7 +13,7 @@ export class UserService {
         new User('steve@gmail.com', '123456')
     ];
 
-    userLoggedInEmitter = new EventEmitter<boolean>();
+    userLoggedInEmitter = new Subject<boolean>();
 
     constructor(private loginService: LoginService, private cookiService: CookieService){}
 
