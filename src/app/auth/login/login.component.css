@@ -1,14 +1,40 @@
 .container-login {
-    max-width: 30%;
+    width: 360px;
+    max-width: 90%;
     align-content: center;
-    margin-left: 35%;
-    margin-top: 10%
+    text-align: center;
+}
+
+.login-title{
+   color: #679868;
+   font-size: 24px;
+   margin: 150px 0 35px;
+   text-align: center;
+   font-weight: 500;
 }
 
 .form-control {
-    max-width: 75%;
+    max-width: 100%;
+    margin-bottom: 25px;
+    height: 45px;
 }
 
 .btn-primary {
-    background-color: #577958;
+    background-color: #679868;
+}
+
+.submit-btn{
+    font-size: 14px;
+    width: 120px;
+    height: 45px;
+    border: 0;
+}
+
+
+@media only screen and /*for YUI*/
+(max-width: 767px) {
+    .login-title{
+        margin-top: 25%;
+    }
+
 }
